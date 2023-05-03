@@ -53,7 +53,7 @@ Actor.main(async () => {
         page.$eval(
           "meta[http-equiv=refresh]",
           (meta) =>
-            ((meta.getAttribute("content") || "").match(/url=(.*)/) || [])[1]
+            ((meta.getAttribute("content") || "").match(/URL=(.*)/) || [])[1]
         ),
         pTimeout(500),
       ]);
