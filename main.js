@@ -55,7 +55,7 @@ Actor.main(async () => {
           (meta) =>
             ((meta.getAttribute("content") || "").match(/URL=(.*)/) || [])[1]
         ),
-        pTimeout(500),
+        pTimeout(2000),
       ]);
     } catch (e) {}
 
